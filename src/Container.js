@@ -59,7 +59,7 @@ export default class DialogContainer extends React.PureComponent {
         child.type.name === "DialogButton" ||
         child.type.displayName === "DialogButton"
       ) {
-        if (Platform.OS === "ios" && buttonChildrens.length > 0) {
+        if (buttonChildrens.length > 0) {
           buttonChildrens.push(
             <View style={[styles.buttonSeparator, buttonSeparatorStyle]} />
           );
@@ -136,14 +136,11 @@ const styles = StyleSheet.create({
       overflow: "hidden"
     },
     android: {
+      width: 270,
       flexDirection: "column",
-      borderRadius: 3,
-      padding: 16,
-      margin: 16,
-      backgroundColor: "white",
+      borderRadius: 13,
       overflow: "hidden",
-      elevation: 4,
-      minWidth: 300
+      backgroundColor: '#f6f8fa'
     },
     web: {
       flexDirection: "column",
@@ -161,7 +158,7 @@ const styles = StyleSheet.create({
       margin: 18
     },
     android: {
-      margin: 12
+      margin: 18
     },
     web: {
       margin: 12
@@ -177,9 +174,10 @@ const styles = StyleSheet.create({
     },
     android: {
       flexDirection: "row",
-      alignItems: "center",
-      justifyContent: "flex-end",
-      marginTop: 4
+      justifyContent: "space-between",
+      borderTopColor: "#A9ADAE",
+      borderTopWidth: StyleSheet.hairlineWidth,
+      height: 46
     },
     web: {
       flexDirection: "row",
