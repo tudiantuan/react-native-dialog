@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
       alignItems: "center"
     },
     android: {
+      flex: 1,
       justifyContent: "center",
       alignItems: "center"
     },
@@ -73,9 +74,8 @@ const styles = StyleSheet.create({
     },
     android: {
       textAlign: "center",
-      backgroundColor: "transparent",
-      padding: 8,
-      fontSize: 14
+      fontSize: 17,
+      backgroundColor: "transparent"
     },
     web: {
       textAlign: "center",
