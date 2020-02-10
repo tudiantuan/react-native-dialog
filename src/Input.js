@@ -54,22 +54,27 @@ const styles = StyleSheet.create({
       paddingHorizontal: 8
     },
     android: {
-      marginHorizontal: 10,
-      marginBottom: 20
+      backgroundColor: "white",
+      borderWidth: StyleSheet.hairlineWidth,
+      borderRadius: 6,
+      borderColor: "#A9ADAE",
+      marginHorizontal: 20,
+      marginBottom: 20,
+      paddingHorizontal: 8
     }
   }),
   label: Platform.select({
     ios: {},
     android: {
-      color: "rgba(0, 0, 0, 0.5)",
-      fontSize: 14
+//       color: "rgba(0, 0, 0, 0.5)",
+//       fontSize: 14
     }
   }),
   textInput: Platform.select({
     ios: {},
     android: {
-      marginLeft: -4,
-      paddingLeft: 4
+//       marginLeft: -4,
+//       paddingLeft: 4
     }
   })
 });
